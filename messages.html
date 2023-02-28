@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message Form</title>
+	<link rel="stylesheet" type="text/css" href="messages.css">
+</head>
+<body>
+	<div class="message-box">
+		<h2>Send a Message</h2>
+		<form method="post" action="messages.php">
+			<div class="user-box">
+				<input type="text" name="to_user" required="">
+				<label>To:</label>
+			</div>
+			<div class="user-box">
+				<input type="text" name="subject" required="">
+				<label>Subject:</label>
+			</div>
+			<div class="user-box">
+				<textarea name="message" required=""></textarea>
+				<label>Message:</label>
+			</div>
+			<input type="submit" name="submit" value="Send">
+		</form>
+	</div>
+</body>
+</html>

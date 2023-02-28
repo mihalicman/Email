@@ -1,0 +1,38 @@
+.search-box {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.user-box {
+	position: relative;
+}
+.user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	outline: none;
+	background: transparent;
+}
+.user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #999;
+	font-size: 16px;
+	padding: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.user-box input:focus ~ label,
+.user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #e67e22;
+	font-size: 12px;
+}
